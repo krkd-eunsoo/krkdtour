@@ -1,0 +1,54 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: auto;
+  width: 50%;
+  padding: 40px;
+}
+
+.description {
+  padding: 20px 40px;
+}
+
+h1 {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Jua', sans-serif;
+  text-align: center;
+  font-size: 30pt;
+  padding-top: 20px;
+}
+
+input[type=text] {
+  border: 2px solid black;
+  border-radius: 4px;
+  height: 35px;
+  padding: 10px;
+}
+
+input[type=text]:focus {
+  border: 3px solid blue;
+}
+
+input[type=button] {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: white;
+  padding: 16px 25px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+p {
+  padding: 10px;
+}
+
+/*page specific css */
+
+.main-q1 {
+    border: 20px solid yellow;
+}
+
+.main-q2 {
+    border: 20px solid blue;
+}

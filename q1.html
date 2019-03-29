@@ -1,0 +1,48 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+  <title>밝은방</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
+
+<script>
+    function check(){
+    var q1 = document.quiz.q1.value;
+
+    if (q1 == "예술") {
+      alert('짝짝짝! 정답입니다.')
+      window.open('q2.html')
+    }
+    else {
+      alert('땡땡땡! 벌칙을 수행하세요')
+      alert('앉았다 일어났다 10번!')
+      alert('ㅋㅋㅋ 농담')
+      location.href='q1.html';
+    }
+  }
+</script>
+
+</head>
+
+<body>
+<div class="main-q1">
+<h1>밝은방</h1>
+<div class="description">
+<form id="quiz" name="quiz">
+  <p>밝은방은 그림그리기를 좋아하는 발달장애인 청소년들이 모여 <mark>예술</mark>작품으로 서로의 이야기를 나누는 방이에요.
+밝은방은 우리 사회가 가진 <mark>편견</mark>과 불합리에 가려져서 보지 못했던 많은 사람들의 <mark>다양성</mark>과 <mark>특별함</mark>을 찾아내는 예술작업들을 하고 있어요.
+성별, 나이, 지역, 문화, 장애유무 등의 다양한 개성들이 모두 존중받으며 즐겁고 건강한 삶을 만들어갔으면 하는 크리킨디 예술의 방, 밝은방!</p>
+<p style="text-align:center;"><strong>밝은방에서는 다양한 사람들이 만나 어떤 작업을 하나요?</strong></p>
+<p style="text-align:center;">
+  <input id="textbox" type="text" name="q1">
+</p>
+<p style="text-align:center;">
+  <input id="button" type="button" value="확인" onclick="check();">
+</p>
+</form>
+</div>
+</div>
+</body>
+
+</html>
