@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>소리작업장</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+    function check(){
+      var q2 = document.quiz.q2.value;
+
+      if (q2 == "랩") {
+        alert('짝짝짝! 정답입니다.')
+        window.open('q3.html')
+      }
+      else {
+        alert('틀렸습니다! 다시 하세요')
+        location.href='q2.html';
+      }
+    }
+
+  </script>
+</head>
+
+<body>
+<div class="main-q9">
+<h1>소리작업장</h1>
+<div class="description">
+<form id="quiz" name="quiz">
+  <p>다양한 작업방식을 시도하며 이해하고, 개인과 공동의 고유 창작물의 <mark>공유</mark>와 확산을 통해 다양한 사람들이 참여할 수 있는 <mark>플랫폼</mark>을 지향합니다.
+    <mark>월드뮤직</mark>을 둘러싼 다양한 예술 컨텐츠(<mark>장다리</mark>, 아프리카 댄스, <mark>불꽃예술</mark>, 의상제작, <mark>랩</mark> 등)를 생산하는 작업장입니다.</p>
+<p style="text-align:center;">
+    누구나 할 수 있다고 절대로 생각하지 않지만<br>
+    또 누구나 할 수 있을 것만 같은<br>
+    누구나 할 수 있다면 좋겠는<br>
+    누구나 할 수 있는 것을 주제로<br>
+    크리킨디센터에서는 10주간의 수업이 시작되고 있습니다.<br>
+    누구나 할 수 있는 것은 무엇일까요?
+    </p>
+<p style="text-align:center;">
+  <input id="textbox" type="text" name="q2"></p>
+<p style="text-align:center;">
+  <input id="button" type="submit" value="확인" accesskey="" onclick="check();"></p>
+</form>
+</div>
+</div>
+</body>
+
+</html>

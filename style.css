@@ -87,9 +87,17 @@ body {
 }
 
 .main-q1 {
-    border: 20px solid yellow;
+    border: 20px solid #52FF33;
 }
 
 .main-q2 {
+    border: 20px solid #7133FF;
+}
+
+.main-q6 {
+    border: 20px solid yellow;
+}
+
+.main-q9 {
     border: 20px solid blue;
 }
