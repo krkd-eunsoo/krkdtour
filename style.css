@@ -57,6 +57,16 @@ button {
   margin: 5px 4px;
 }
 
+.button2 {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  margin: 5px 4px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -118,6 +128,50 @@ body {
     border: 20px solid #a4d4ff;
 }
 
-.main-q9 {
+.main-q10 {
     border: 20px solid #ffa07a;
+}
+
+.main-q11 {
+    border: 20px solid #120996;
+}
+
+.main-q12 {
+    border: 20px solid #5ed804;
+}
+
+.main-q13 {
+    border: 20px solid #ffa07a;
+}
+
+.main-q14 {
+    border: 20px solid #ffde00;
+}
+
+.main-q15 {
+    border: 20px solid #c9c4ee;
+}
+
+.main-q16 {
+    border: 20px solid #fb5d57;
+}
+
+.main-q17 {
+    border: 20px solid #ffdf8c;
+}
+
+.main-q18 {
+    border: 20px solid #b6e5ff;
+}
+
+.main-q19 {
+    border: 20px solid #ffd69b;
+}
+
+.main-q20 {
+    border: 20px solid #00ff85;
+}
+
+.main-q21 {
+    border: 20px solid #ebffbc;
 }
