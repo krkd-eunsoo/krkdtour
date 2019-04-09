@@ -91,17 +91,33 @@ body {
 }
 
 .main-q2 {
-    border: 20px solid #7133FF;
+    border: 20px solid blue;
 }
 
 .main-q3 {
-    border: 20px solid #FFABDF;
+    border: 20px solid #942525;
+}
+
+.main-q4 {
+    border: 20px solid #7b47bf;
 }
 
 .main-q6 {
+    border: 20px solid #25e8ea;
+}
+
+.main-q7 {
+    border: 20px solid #bde550;
+}
+
+.main-q8 {
     border: 20px solid yellow;
 }
 
 .main-q9 {
-    border: 20px solid blue;
+    border: 20px solid #a4d4ff;
+}
+
+.main-q9 {
+    border: 20px solid #ffa07a;
 }
