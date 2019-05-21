@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>하얀개</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+    function check(){
+    var q1 = document.quiz.q1.value;
+
+    if (q1 == "혁구") {
+      alert('확실한가요?')
+        alert('확실하네요.')
+      window.open('q2-1.html')
+    }
+    else {
+      alert('땡')
+    }
+  }
+</script>
+
+</head>
+
+<body>
+<div class="main-q1">
+<h1>하얀개</h1>
+<div class="description">
+<form id="quiz" name="quiz">
+  <p>작년 혁신파크에 나타난 이 <mark>하얀개</mark>는 파댕이, 흰둥이, 초복이, <mark>혁구</mark>, 멍멍이, <mark>피타</mark> 등 다양한 이름으로 불리우며
+    이곳을 떠돌다, 누군가의 민원으로 잡혀 갔어요. 그러다 이 개를 지켜보는 사람들 몇몇이 <mark>유기견</mark>센터에서
+    구조해 데리고 오면서 <mark>돌봄</mark>이 시작됐지요. 그 후 하얀개는 우리 센터의 <mark>출근견</mark>이 되었고, 이름도
+    ‘혁신파크 댕댕이’를 뜻하는 이름으로 불리우게 되었답니다.</p>
+<p style="text-align:center;"><strong>이 하얀개의 이름은 무엇일까요?</strong></p>
+<p style="text-align:center;">
+  <input id="textbox" type="text" name="q1">
+</p>
+<p style="text-align:center;">
+  <input id="button" type="submit" value="확인" onclick="check();">
+</p>
+</form>
+</div>
+</div>
+</body>
+
+</html>

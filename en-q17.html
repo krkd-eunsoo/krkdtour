@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>5원소</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+    function check(){
+    var q1 = document.quiz.q1.value;
+
+    if (q1 == "물") {
+      alert('잘하고 있어!')
+      window.open('q18-1.html')
+    }
+    else {
+      alert('세상에 이런 난이도라니.. 패스')
+      alert('아니야 다시 해보자')
+    }
+  }
+</script>
+
+</head>
+
+<body>
+<div class="main-q17">
+<h1>5원소</h1>
+<div class="description">
+<form id="quiz" name="quiz">
+  <p>크리킨디센터는 배움을 찾아 다양한 사람들이 모이는 곳입니다. 이들은 세계를 구성하는 5원소(공기, 물, 불, 흙, 옥수수)에서 따온 이름을 갖게 됩니다. 다섯 가지 원소가 서로 연결되어 작은 우주를 만들어 내는 것처럼, 아름다운 크리킨디를 만들어가고자 해요.</p>
+  <p><mark>공기</mark> 맑은 눈과 따뜻한 마음을 가진 지혜로운 어른들<br/>
+      <mark>불</mark> 자유로운 정신의 용감한 모험가, 청년작업자들<br/>
+      <mark>흙</mark> 크리킨디의 스태프(staff)들<br/>
+      <mark>물</mark> 청소년들과 함께 새 길을 내는 작업자들<br/>
+      <mark>옥수수</mark> 새로운 가치를 창조하는 어린이와 청소년들</p>
+      <p><img src="img/krkd_image.png" width="100%"></p>
+<p style="text-align:center;"><strong>청소년들과 함께 새 길을 내는 작업자들을 일컫는 말은 무엇일까요?
+</strong></p>
+<p style="text-align:center;">
+  <input id="textbox" type="text" name="q1">
+</p>
+<p style="text-align:center;">
+  <input id="button" type="submit" value="확인" onclick="check();">
+</p>
+</form>
+</div>
+</div>
+</body>
+
+</html>

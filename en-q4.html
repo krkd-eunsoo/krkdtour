@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>즉흥춤</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+    function check(){
+    var q1 = document.quiz.q1.value;
+
+    if (q1 == "관찰") {
+      alert('레알 정답!')
+      window.open('q5-1.html')
+    }
+    else {
+      alert('맞춘줄 알았지? 다시!')
+    }
+  }
+</script>
+
+</head>
+
+<body>
+<div class="main-q4">
+<h1>즉흥춤</h1>
+<div class="description">
+<form id="quiz" name="quiz">
+  <p>즉흥춤은 <mark>막춤</mark>이 아니라, 함께 춤을 추는 사람의 순간적인 <mark>움직임</mark>을 <mark>관찰</mark>하며 내 몸도 <mark>반응</mark>하여
+    움직이는 춤이에요. 이 춤을 추게 되면 나에 대한 탐구와 함께하는 <mark>사람</mark>을 배려하고 존중하는
+    태도를 갖추게 된답니다.</p>
+<p style="text-align:center;"><strong>즉흥춤을 추려면 상대방의 움직임을 잘 ㅇㅇ해야한다고 하는데요, ㅇㅇ에 들어갈 말은 무엇일까요?</strong></p>
+<p style="text-align:center;">
+  <input id="textbox" type="text" name="q1">
+</p>
+<p style="text-align:center;">
+  <input id="button" type="submit" value="확인" onclick="check();">
+</p>
+</form>
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>오토마타</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        function check() {
+            var q1 = document.quiz.q1.value;
+
+            if (q1 == "코끼리") {
+                alert('정답')
+                window.open('q12-1.html')
+            } else {
+                alert('다시 풀어봅시다!')
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="main-q11">
+        <h1>오토마타</h1>
+        <div class="description">
+            <form id="quiz" name="quiz">
+                <p>목공오토마타는 조그마한 나무조각들을 다듬고 이어 붙여서 만드는 <mark>예술</mark>이자 <mark>공학</mark>이자 놀이입니다. 목공오토마타 전시에는 이승항 선생님이 ‘멸종 위기 동물’을 주제로 만든 작품들이 있는데요, <mark>펭귄</mark>, 아프리카 <mark>코끼리</mark>, <mark>늑대</mark>가 있습니다.</p>
+                <p style="text-align:center;"><strong>오토마타 작품들 중에는 15년 안에 멸종될거라 예견되는 동물이 있다고 하는데요.
+가장 몸집이 큰 이 멸종위기 동물은 무엇일까요?
+</strong></p>
+                <p style="text-align:center;">
+                    <input id="textbox" type="text" name="q1">
+                </p>
+                <p style="text-align:center;">
+                    <input id="button" type="submit" value="확인" onclick="check();">
+                </p>
+            </form>
+        </div>
+    </div>
+</body></html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>밝은방</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+    function check(){
+    var q1 = document.quiz.q1.value;
+
+    if (q1 == "나이") {
+      alert('정답 고고고!!!')
+      window.open('q9-1.html')
+    }
+    else {
+      alert('저런...틀렸네')
+    }
+  }
+</script>
+
+</head>
+
+<body>
+<div class="main-q8">
+<h1>밝은방</h1>
+<div class="description">
+<form id="quiz" name="quiz">
+  <p>밝은방은 그림 그리기를 좋아하는 발달장애 청소년들이 모여, 예술작업으로 서로의 이야기를 나누는 방이에요. 우리 사회가 가진 <mark>성별</mark>, <mark>나이</mark>, <mark>지역</mark>, <mark>문화</mark>, <mark>장애 유무</mark> 등에 대한 편견과 불합리에 가려진 사람들의 다양성과 특별함을 찾아내는 예술작업을 하고 있답니다.</p>
+<p style="text-align:center;"><strong>밝은방에서는 다양한 개성들이 존중받을 수 있도록 성별, ㅇㅇ, 지역, 문화, 장애 유무를 따지지 않아요. ㅇㅇ에 어울리는 말은 무엇일까요?
+</strong></p>
+<p style="text-align:center;">
+  <input id="textbox" type="text" name="q1">
+</p>
+<p style="text-align:center;">
+  <input id="button" type="submit" value="확인" onclick="check();">
+</p>
+</form>
+</div>
+</div>
+</body>
+
+</html>

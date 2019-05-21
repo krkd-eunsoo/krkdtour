@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>크리킨디 이야기</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+    function check(){
+    var q1 = document.quiz.q1.value;
+
+    if (q1 == "벌새") {
+      alert('엄마 나 맞췄어!!')
+      window.open('q20-1.html')
+    }
+    else {
+      alert('이게 뭐라고 틀릴까')
+      alert('별거 아니니 다시 도전!')
+    }
+  }
+</script>
+
+</head>
+
+<body>
+<div class="main-q19">
+<h1>크리킨디 이야기</h1>
+<div class="description">
+<form id="quiz" name="quiz">
+    <p><mark>숲</mark>이 타고 있었습니다. 숲속의 동물들은 앞을 다투며 도망을 갔습니다. 하지만 <mark>크리킨디</mark>란 이름의 작은 <mark>벌새</mark>는 왔다갔다 하며 작은 주둥이로 물고 온 단 한 방울의 <mark>물</mark>로 불을 끄느라 분주했습니다. 다른 <mark>동물</mark>들이 이런 그의 모습을 보고 "저런다고 무슨 소용이 있어?"라며 비웃었습니다. 크리킨디는 대답했습니다.</p>
+     <p style="text-align:center;">
+      <strong>"나는 내가 할 수 있는 일을 할 뿐이야."</strong>
+  </p>
+<p style="text-align:center;"><strong>우리 센터를 상징하는 크리킨디는 무슨 동물일까요?</strong></p>
+<p style="text-align:center;">
+  <input id="textbox" type="text" name="q1">
+</p>
+<p style="text-align:center;">
+  <input id="button" type="submit" value="확인" onclick="check();">
+</p>
+</form>
+</div>
+</div>
+</body>
+
+</html>
