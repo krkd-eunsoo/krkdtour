@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>디지털놀이터</title>
+  <title>Digital Playground</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
@@ -10,17 +10,12 @@
     function check(){
     var q1 = document.quiz.q1.value;
 
-    if (q1 === "어린이D단" ||
-        q1 === "어린이d단" ||
-        q1 === "어린이디단" ||
-        q1 === "어린이 D단" ||
-        q1 === "어린이 d단" ||
-        q1 === "어린이 디단")  {
-      alert('딩동댕동 전국 노래자랑~~~')
-      window.open('q8-1.html')
+    if (q1.toLowerCase().trim() == "d-kids" | "d-kids project".toLowerCase())  {
+      alert('Awesome!')
+      window.open('en-q8-1.html')
     }
     else {
-      alert('틀렸어? 진짜? 리얼?')
+      alert('Wrong again?')
     }
   }
 </script>
@@ -29,16 +24,16 @@
 
 <body>
 <div class="main-q7">
-<h1>디지털놀이터</h1>
+<h1>Digital Playground</h1>
 <div class="description">
 <form id="quiz" name="quiz">
-  <p>디지털 기반의 작품들을 체험할 수 있는 상설 전시공간이에요. 디지털과 아날로그의 경계없이 놀면서 작업하는 어린이모임인 <mark>어린이D단</mark>,  새로운 도구나 <mark>기술</mark>을 <mark>실험</mark>하며 <mark>놀이터</mark>를 만드는 청소년 그룹 <mark>디지털</mark> <mark>활동가</mark>들의 제작물들이 주로 전시됩니다.</p>
-<p style="text-align:center;"><strong>디지털놀이터에 전시물을 만드는 어린이 작업자들 모임의 이름은? </strong></p>
+  <p>This is a gallery that features digital, interactive works. Most of the works exhibited here are from the D-Kids project, where children create digital and analogue objects through play.</p>
+<p style="text-align:center;"><strong>What is the name of the children’s group that creates works to be exhibited in the Digital Playground gallery? </strong></p>
 <p style="text-align:center;">
   <input id="textbox" type="text" name="q1">
 </p>
 <p style="text-align:center;">
-  <input id="button" type="submit" value="확인" onclick="check();">
+  <input id="button" type="submit" value="Confirm" onclick="check();">
 </p>
 </form>
 </div>

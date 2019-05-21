@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>영셰프스쿨</title>
+  <title>Young Chef School</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
@@ -10,13 +10,13 @@
     function check(){
     var q1 = document.quiz.q1.value;
 
-    if (q1 == "이천식천") {
-      alert('킹갓엠페러제너럴충무공마제스티는 YOU!')
-      alert('뭐래~')
-      window.open('q11-1.html')
+    if (q1.toLowerCase().trim() == "donghak" | "eastern learning".toLowerCase()) {
+      alert('Well done!')
+      alert('Is it too easy?')
+      window.open('en-q11-1.html')
     }
     else {
-      alert('그것도 아니야')
+      alert('Try harder')
     }
   }
 </script>
@@ -25,17 +25,17 @@
 
 <body>
 <div class="main-q10">
-<h1>영셰프스쿨</h1>
+<h1>Young Chef School</h1>
 <div class="description">
 <form id="quiz" name="quiz">
-  <p><mark>영셰프스쿨</mark>은 ‘인생을 요리하는 요리사’를 모토로 하는 도시형 <mark>요리대안학교</mark>입니다. 영셰프스쿨의 점심밥상 ‘<mark>맞점</mark>(영셰프 10기가 반갑게 맞이하는, 정답게 마주하는 점심)’이 열리기도 하는 요리스튜디오 <mark>이천식천</mark>은 먹는 음식과 행위에 대해 농부와 해, 달, 바람에게 <mark>감사</mark>의 마음을 담아 기도를 올리는 식사 공간이에요.
+  <p>Young Chef School is an alternative culinary school where young people learn to become “Chefs that bake life”. Every weekday, they operate the lunch restaurant Matjum(‘Welcoming lunch encounter’) which serves the community in Seoul Innovation Park. The cooking studio that they use also has a special name which comes from the teachings of Donghak(‘Eastern Learning’): Yichunshikchun(以天食天) - “To eat the sky as sky”. It means that we ourselves and the things we eat are all part of the universe - there is no better or worse, only that we are the universe.
   </p>
-<p style="text-align:center;"><strong>요리스튜디오 이름은 무엇일까요?</strong></p>
+<p style="text-align:center;"><strong>Yichunshikchun is a name adopted from which philosophy?</strong></p>
 <p style="text-align:center;">
   <input id="textbox" type="text" name="q1">
 </p>
 <p style="text-align:center;">
-  <input id="button" type="submit" value="확인" onclick="check();">
+  <input id="button" type="submit" value="Confirm" onclick="check();">
 </p>
 </form>
 </div>

@@ -1,42 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>소리작업장</title>
+  <title>Sound studio</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>
-    function check(){
-    var q1 = document.quiz.q1.value;
-
-    if (q1 == "랩") {
-      alert('틀리기가 쉽지 않아요')
-      window.open('q7-1.html')
-    }
-    else {
-      alert('한번 더 기회를 드리겠습니다.')
-    }
-  }
-</script>
-
 </head>
 
 <body>
 <div class="main-q6">
-<h1>소리작업장</h1>
+<h1>Sound studio</h1>
 <div class="description">
 <form id="quiz" name="quiz">
-  <p>소리작업장은 <mark>축제음악</mark>부터 힙합까지 다양한 공연 콘텐츠(<mark>장다리</mark>, <mark>아프리카 댄스</mark>, <mark>불꽃예술</mark>, 의상제작, <mark>랩</mark> 등)를 만들어내는 작업장입니다.</p>
-<p style="text-align:center;"><strong>누구나 할 수 있다고 생각하지 않지만, 또 누구나 할 수 있을 것만 같은 이것은 무엇일까요?
-지난 3월부터 10주간의 이 수업이 진행되고 있답니다.
-<br />(*힌트 : Show me the money!)
+  <p>Sound studio is where different kinds of performing arts experiments are carried out — anything from festival music, hip hop, rap, African dance, fire art and costume design!</p>
+<p style="text-align:center;"><strong>Which of these is not represented at our center?
 </strong></p>
 <p style="text-align:center;">
-  <input id="textbox" type="text" name="q1">
-</p>
-<p style="text-align:center;">
-  <input id="button" type="submit" value="확인" onclick="check();">
+<button class="button3" onclick="alert('I think not!')">
+Rap</button>
+<button class="button3" onclick="alert('Look again!')">
+African dance</button>
+<button class="button3" onclick="alert('Nope!')">
+Fire art</button>
+<button class="button3" onclick="alert('Got it!'); window.open('en-q7-1.html')">
+Ballet</button>
 </p>
 </form>
 </div>

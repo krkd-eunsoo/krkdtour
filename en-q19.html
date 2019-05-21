@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>크리킨디 이야기</title>
+  <title>Kurikindi Story</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
@@ -10,13 +10,13 @@
     function check(){
     var q1 = document.quiz.q1.value;
 
-    if (q1 == "벌새") {
-      alert('엄마 나 맞췄어!!')
-      window.open('q20-1.html')
+    if (q1.toLowerCase().trim() == "humming bird".toLowerCase()) {
+      alert('Yay!!')
+      window.open('en-q20-1.html')
     }
     else {
-      alert('이게 뭐라고 틀릴까')
-      alert('별거 아니니 다시 도전!')
+      alert('Bird, but what kind of bird?')
+      alert('Try once again')
     }
   }
 </script>
@@ -25,19 +25,24 @@
 
 <body>
 <div class="main-q19">
-<h1>크리킨디 이야기</h1>
+<h1>Kurikindi Story</h1>
 <div class="description">
 <form id="quiz" name="quiz">
-    <p><mark>숲</mark>이 타고 있었습니다. 숲속의 동물들은 앞을 다투며 도망을 갔습니다. 하지만 <mark>크리킨디</mark>란 이름의 작은 <mark>벌새</mark>는 왔다갔다 하며 작은 주둥이로 물고 온 단 한 방울의 <mark>물</mark>로 불을 끄느라 분주했습니다. 다른 <mark>동물</mark>들이 이런 그의 모습을 보고 "저런다고 무슨 소용이 있어?"라며 비웃었습니다. 크리킨디는 대답했습니다.</p>
+    <p>One day the forest was on fire.
+The animals of the forest ran and struggled to escape the danger.
+However, a small hummingbird named Kurikindi rushed back and forth into the forest with a single drop of water to put out the fire.
+The other animals saw this and laughed at Kurikindi, saying that it was pointless to try.
+Kurikindi replied,
+</p>
      <p style="text-align:center;">
-      <strong>"나는 내가 할 수 있는 일을 할 뿐이야."</strong>
+      <strong>"I'm just doing what I can."</strong>
   </p>
-<p style="text-align:center;"><strong>우리 센터를 상징하는 크리킨디는 무슨 동물일까요?</strong></p>
+<p style="text-align:center;"><strong>What is the animal that symbolizes our center?</strong></p>
 <p style="text-align:center;">
   <input id="textbox" type="text" name="q1">
 </p>
 <p style="text-align:center;">
-  <input id="button" type="submit" value="확인" onclick="check();">
+  <input id="button" type="submit" value="Confirm" onclick="check();">
 </p>
 </form>
 </div>

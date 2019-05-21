@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>작업장학교</title>
+  <title>Haja Production School</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
@@ -10,12 +10,12 @@
     function check(){
     var q1 = document.quiz.q1.value;
 
-    if (q1 == "함께살기") {
-      alert('이대로만 가자!')
-      window.open('q19-1.html')
+    if (q1.toLowerCase().trim() == "living together".toLowerCase()) {
+      alert('Keep it going!')
+      window.open('en-q19-1.html')
     }
     else {
-      alert('노답')
+      alert('Not the answer')
     }
   }
 </script>
@@ -24,18 +24,17 @@
 
 <body>
 <div class="main-q18">
-<h1>작업장학교</h1>
+<h1>Haja Production School</h1>
 <div class="description">
 <form id="quiz" name="quiz">
-  <p>하자작업장학교는 생태, 평화, <mark>함께살기</mark>를 주제로 학습하는 <mark>대안학교</mark>입니다. 고등학생 연령의 청소년들이 <mark>좋은 삶</mark>을 위해 인문학을 중심으로 도시농업, 예술매체, 언어를 배우고 있어요. 관심있는 모든 <mark>탈학교</mark> <mark>청소년</mark>들에게 열려있답니다.</p>
-<p style="text-align:center;"><strong>하자작업장학교가 함께 공부하고있는 주제는 생태, 평화, ㅇㅇㅇㅇ입니다. 
-ㅇㅇㅇㅇ은 무엇일까요? 
+  <p>Haja Production School is an alternative school where learning is based on the themes of ecology, peace and living together. Young people think about the ‘good life’ they would like to live and study humanities, urban farming, art and media and language skills. The school is open to all young people who have chosen not to enter mainstream education.</p>
+<p style="text-align:center;"><strong>In Haja Production School the young people learn about ecology, peace and __________. What goes in the blank? 
 </strong></p>
 <p style="text-align:center;">
   <input id="textbox" type="text" name="q1">
 </p>
 <p style="text-align:center;">
-  <input id="button" type="submit" value="확인" onclick="check();">
+  <input id="button" type="submit" value="Confirm" onclick="check();">
 </p>
 </form>
 </div>

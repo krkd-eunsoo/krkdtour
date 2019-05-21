@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>힘센발 파쿠르</title>
+  <title>Parkour</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
@@ -10,12 +10,12 @@
     function check(){
     var q1 = document.quiz.q1.value;
 
-    if (q1 == "누구나") {
-      alert('이정도는 맞춰야죠')
-      window.open('q3-1.html')
+    if (q1.toLowerCase().trim() == "everyone" || "anyone".toLowerCase()) {
+      alert('That was easy!')
+      window.open('en-q3-1.html')
     }
     else {
-      alert('에이 정말 그거 맞아? 땡')
+      alert('Are you sure? Wrong!')
     }
   }
 </script>
@@ -24,18 +24,16 @@
 
 <body>
 <div class="main-q2">
-<h1>힘센발 파쿠르</h1>
+<h1>Parkour</h1>
 <div class="description">
 <form id="quiz" name="quiz">
-  <p>‘파쿠르’는 난간을 타고 바닥을 구르며, <mark>내 주변</mark>을 <mark>모험</mark>이 가득한 <mark>놀이터</mark>로 만드는 <mark>생활스포츠</mark>입니다.
-    파쿠르는 위험한 운동이 아니라, 주변환경을 잘 살피면서 내 몸을 보호할 수 있는 운동이랍니다.
-    파쿠르 하는 어린이, 청소년, 어르신 등 <mark>누구나</mark> 참여할 수 있는 ‘<mark>힘센발</mark> 파쿠르’로 여러분을 초대해요.</p>
-<p style="text-align:center;"><strong>파쿠르는 누가 할 수 있을까요?</strong></p>
+  <p>Parkour is a sport that makes use of the urban environment such as railings, stairs, and walls. It urges us to see our everyday space in a different light, discovering new uses, and transforming ordinary spaces into a space of adventure. Parkour is not about danger, rather, it is about keeping yourself safe by being attentive to the environment. It doesn’t matter if you are a small child, teenager, or elderly. Parkour is open to everyone.</p>
+<p style="text-align:center;"><strong>Who can participate in parkour?</strong></p>
 <p style="text-align:center;">
   <input id="textbox" type="text" name="q1">
 </p>
 <p style="text-align:center;">
-  <input id="button" type="submit" value="확인" onclick="check();">
+  <input id="button" type="submit" value="Confirm" onclick="check();">
 </p>
 </form>
 </div>

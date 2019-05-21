@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>목신작업장</title>
+  <title>Mokshin Woodwork Studio</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
@@ -11,11 +11,11 @@
     var q1 = document.quiz.radio.value;
 
     if (q1 == "correct") {
-      alert('틀릴줄 알았는데 맞췄네?!')
-      window.open('q13-1.html')
+      alert('I underestimated you!')
+      window.open('en-q13-1.html')
     }
     else {
-      alert('다 풀었어? 집에 갈까?')
+      alert('Given up already? Try again!')
     }
   }
 </script>
@@ -24,23 +24,23 @@
 
 <body>
 <div class="main-q12">
-<h1>목신작업장</h1>
+<h1>Mokshin Woodwork Studio</h1>
 <div class="description">
 <form id="quiz" name="quiz">
-  <p>크리킨디 목신작업장에서는 정제된 재료, 잘 말린 나무가 아닌 주변에 버려지고 꺾여버린 <mark>나무</mark>를 구해다 쪼개서 숟가락, 의자와 같은 생활물건을 만드는 작업을 합니다. 나무를 정성스레 들여다보고 나무의 삶과 <mark>쓰임</mark>을 생각하며 <mark>숲</mark>의 <mark>생명</mark>을 <mark>존중</mark>하는 프로젝트입니다.</p>
-<p style="text-align:center;"><strong>목신작업장에서 사용하는 나무 재료는?</strong></p>
-<p style="margin-left:35%;">
+  <p>In Mokshin Woodwork Studio we do not use refined material or finely dried wood. Instead, we gather broken pieces of wood from our surroundings and make them into spoons, stools and other daily tools. It is a project that allows us to carefully observe the trees and the wood they provide, and gain respect for the living forest.</p>
+<p style="text-align:center;"><strong>What kind of wood is used in the Mokshin Woodwork Studio?</strong></p>
+<p style="margin-left:10%;">
   <input name="radio" type="radio" value="materials">
-  정제된 재료 <br/>
+  Refined wood<br/>
   <input name="radio" type="radio" value="dry">
-  잘 말린 나무 <br/>
+  Dried wood<br/>
   <input name="radio" type="radio" value="far">
-  먼 데서 온 나무들 <br/>
+  Wood from faraway places<br/>
   <input name="radio" type="radio" value="correct">
-  주변에 버려진 나무들 <br/>
+ Abandoned wood from surrounding area<br/>
 </p>
 <p style="text-align:center;">
-  <input id="button" type="submit" value="확인" onclick="check();">
+  <input id="button" type="submit" value="Confirm" onclick="check();">
 </p>
 </form>
 </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>공유책방</title>
+  <title>Books Commons</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
@@ -10,13 +10,14 @@
     function check(){
     var q1 = document.quiz.q1.value;
 
-    if (q1 == "stone" || q1 == "rock" || q1 == "Stone" || q1 == "Rock") {
-      alert('통과')
-      window.open('q1-1.html')
+    if (q1.toLowerCase().trim() == "stone".toLowerCase()) {
+      alert('Lucky guess?')
+      alert('You win!')
+      window.open('en-q1-1.html')
     }
     else {
-      alert('호락호락 하지 않네')
-      alert('답을 다시 써보자')
+      alert('Not easy right?')
+      alert('Try again')
     }
   }
 </script>
@@ -25,16 +26,16 @@
 
 <body>
 <div class="main-q21">
-<h1>공유책방</h1>
+<h1>Books Commons</h1>
 <div class="description">
 <form id="quiz" name="quiz">
-  <p>크리킨디 입구에 위치한 공유<mark>책방</mark> '구르는 <mark>돌</mark>'. 구르는 돌은, 그 자리에 머물러 있는 것이 아니라, 구르면서 깎이기도 하고 매끈하게 다듬어지기도 하면서 다양한 <mark>변화</mark>를 경험하지요. 책방에 머물며 다양한 <mark>상상</mark>, <mark>연결</mark>을 시도해볼 수 있는 공간이 되었으면 하는 바람을 담았습니다.</p>
-<p style="text-align:center;"><strong>크리킨디 책방의 이름: ‘공유책방: 구르는 0’ 여기에 들어갈 단어를 영어로 하면?</strong></p>
+  <p>The Books Commons is located near the main entrance on the 3rd floor. The Korean name of the area is ‘Rolling Stone’. Rolling stones do not stay long in one place. Rather they roll here and there, and as the surface is shaved and smoothened the stones evolve into various shapes. The Books Commons hopes to become a space for diverse ideas to connect with each other.</p>
+<p style="text-align:center;"><strong>The Korean name of Books Commons is Rolling ____________ . What goes in the blank?</strong></p>
 <p style="text-align:center;">
   <input id="textbox" type="text" name="q1">
 </p>
 <p style="text-align:center;">
-  <input id="button" type="submit" value="확인" onclick="check();">
+  <input id="button" type="submit" value="Confirm" onclick="check();">
 </p>
 </form>
 </div>

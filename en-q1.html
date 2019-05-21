@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>하얀개</title>
+  <title>White Dog</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
@@ -10,13 +10,13 @@
     function check(){
     var q1 = document.quiz.q1.value;
 
-    if (q1 == "혁구") {
-      alert('확실한가요?')
-        alert('확실하네요.')
-      window.open('q2-1.html')
+    if (q1.toLowerCase().trim() == "hyuck goo".toLowerCase()) {
+      alert('Are you sure?')
+        alert("That's right!")
+      window.open('en-q2-1.html')
     }
     else {
-      alert('땡')
+      alert('Wrong!')
     }
   }
 </script>
@@ -25,19 +25,16 @@
 
 <body>
 <div class="main-q1">
-<h1>하얀개</h1>
+<h1>White Dog</h1>
 <div class="description">
 <form id="quiz" name="quiz">
-  <p>작년 혁신파크에 나타난 이 <mark>하얀개</mark>는 파댕이, 흰둥이, 초복이, <mark>혁구</mark>, 멍멍이, <mark>피타</mark> 등 다양한 이름으로 불리우며
-    이곳을 떠돌다, 누군가의 민원으로 잡혀 갔어요. 그러다 이 개를 지켜보는 사람들 몇몇이 <mark>유기견</mark>센터에서
-    구조해 데리고 오면서 <mark>돌봄</mark>이 시작됐지요. 그 후 하얀개는 우리 센터의 <mark>출근견</mark>이 되었고, 이름도
-    ‘혁신파크 댕댕이’를 뜻하는 이름으로 불리우게 되었답니다.</p>
-<p style="text-align:center;"><strong>이 하얀개의 이름은 무엇일까요?</strong></p>
+  <p>Last year in Seoul Innovation Park, we noticed a stray white dog. People gave him many names: Padeng, Whitey, Chobok, Hyuck Goo, Pita, and so on. One day, someone reported him and he was taken away. Luckily, a group of people came together to rescue him from the animal shelter, where he was likely to be put down. Since that fateful day, people have come together to collectively care for this white dog. These days, he is living the life of an office dog, coming to the center every morning, and going home by night.</p>
+<p style="text-align:center;"><strong>What is the name of this dog?</strong></p>
 <p style="text-align:center;">
   <input id="textbox" type="text" name="q1">
 </p>
 <p style="text-align:center;">
-  <input id="button" type="submit" value="확인" onclick="check();">
+  <input id="button" type="submit" value="Confirm" onclick="check();">
 </p>
 </form>
 </div>

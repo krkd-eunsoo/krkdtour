@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>5원소</title>
+  <title>The Five Elements</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Jua|Noto+Sans+KR" rel="stylesheet">
@@ -10,13 +10,13 @@
     function check(){
     var q1 = document.quiz.q1.value;
 
-    if (q1 == "물") {
-      alert('잘하고 있어!')
-      window.open('q18-1.html')
+    if (q1.toLowerCase().trim() == "water".toLowerCase()) {
+      alert('You are doing extremely well!')
+      window.open('en-q18-1.html')
     }
     else {
-      alert('세상에 이런 난이도라니.. 패스')
-      alert('아니야 다시 해보자')
+      alert('Want to skip?')
+      alert('No, please try again')
     }
   }
 </script>
@@ -25,23 +25,23 @@
 
 <body>
 <div class="main-q17">
-<h1>5원소</h1>
+<h1>The Five Elements</h1>
 <div class="description">
 <form id="quiz" name="quiz">
-  <p>크리킨디센터는 배움을 찾아 다양한 사람들이 모이는 곳입니다. 이들은 세계를 구성하는 5원소(공기, 물, 불, 흙, 옥수수)에서 따온 이름을 갖게 됩니다. 다섯 가지 원소가 서로 연결되어 작은 우주를 만들어 내는 것처럼, 아름다운 크리킨디를 만들어가고자 해요.</p>
-  <p><mark>공기</mark> 맑은 눈과 따뜻한 마음을 가진 지혜로운 어른들<br/>
-      <mark>불</mark> 자유로운 정신의 용감한 모험가, 청년작업자들<br/>
-      <mark>흙</mark> 크리킨디의 스태프(staff)들<br/>
-      <mark>물</mark> 청소년들과 함께 새 길을 내는 작업자들<br/>
-      <mark>옥수수</mark> 새로운 가치를 창조하는 어린이와 청소년들</p>
+  <p>Diverse people come to Kurikindi Center to learn. They are given titles from five elements according to their roles at the Center. The five elements are air, water, fire, earth and corn. The five elements connect to form a small universe and the center also seeks to become a small but beautiful community.</p>
+  <p><strong>Air:</strong> Wise elders with bright eyes and warm hearts<br/>
+      <strong>Fire:</strong> Young adventurers with free spirit and courage<br/>
+      <strong>Earth:</strong> Staff of Kurikindi Center<br/>
+      <strong>Water:</strong> Artists and others who seek to pave new roads with young people<br/>
+      <strong>Corn:</strong> Young children and teenagers who create new values</p>
       <p><img src="img/krkd_image.png" width="100%"></p>
-<p style="text-align:center;"><strong>청소년들과 함께 새 길을 내는 작업자들을 일컫는 말은 무엇일까요?
+<p style="text-align:center;"><strong>What do you call the artists who seek to pave new roads with young people?
 </strong></p>
 <p style="text-align:center;">
   <input id="textbox" type="text" name="q1">
 </p>
 <p style="text-align:center;">
-  <input id="button" type="submit" value="확인" onclick="check();">
+  <input id="button" type="submit" value="Confirm" onclick="check();">
 </p>
 </form>
 </div>
