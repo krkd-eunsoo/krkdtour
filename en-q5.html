@@ -10,12 +10,12 @@
     function check(){
     var q1 = document.quiz.q1.value;
 
-    if (q1.toLowerCase().trim() == "old clothes".toLowerCase()) {
-      alert('So easy!')
+    if (q1.toLowerCase().trim() == "old clothes".toLowerCase() || == q1.toLowerCase().trim() == "second hand clothes".toLowerCase() || == q1.toLowerCase().trim() == "recycled clothes".toLowerCase()) {
+      alert('You passed the most difficult question! Well done!')
       window.open('en-q6-1.html')
     }
     else {
-      alert('Hint: Clothes, but what kind?')
+      alert('Hint: Clothes, but what kind? A: _____ clothes')
     }
   }
 </script>
